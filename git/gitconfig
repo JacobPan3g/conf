@@ -1,0 +1,12 @@
+[core]
+	editor = vim
+	excludesfile = /home/jacob/.gitconf/gitignore
+[color]
+	ui = true
+[merge]
+	tool = vimdiff
+[user]
+	name = Jacob Pan
+	email = jacobpan3g@qq.com
+[push]
+	default = matching

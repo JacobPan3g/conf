@@ -1,0 +1,19 @@
+
+targets_clean = $(addsuffix _clean, $(targets))
+
+all: $(targets)
+	@echo "done <$@> at `date`"
+
+clean: $(targets_clean)
+	@echo "cleaned <$@> at `date`"
+
+
+$(targets): %:
+	make -C $@
+
+$(targets_clean): %_clean:
+	make -C $(subst _clean,,$@) clean
+     
+
+.PHONY: clean all $(targets) $(targets_clean)
+

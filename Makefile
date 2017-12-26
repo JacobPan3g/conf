@@ -1,8 +1,8 @@
-everything = tmux vim
-everything_sudo = smb
+targets = tmux vim git
 
-all:
-	for dir in $(everything); do make -C $$dir; done
+.PHONY: default
+default: all
+	@echo "Remenber to 'sudo make -f Makefile.sudo'"
 
-sudo:
-	for dir in $(everything_sudo); do make -C $$dir; done
+include Makefile.in
+
