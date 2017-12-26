@@ -1,0 +1,12 @@
+syntax on
+
+set hlsearch
+
+" tab
+set tabstop=4       " the width of <Tab>
+set shiftwidth=4    " the width of >>, <<
+set softtabstop=4   " <Backspace> delete 4 spaces
+set expandtab
+
+set autoindent
+
