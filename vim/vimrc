@@ -10,3 +10,12 @@ set expandtab
 
 set autoindent
 
+
+func SuperTab()
+    if col('.') == 1 || getline('.')[col('.')-2] == ' ' || getline('.')[col('.')-2] == '\t'
+        return "\<Tab>"
+    else
+        return "\<C-n>"
+    endif
+endfunc
+inoremap <Tab> <c-r>=SuperTab()<CR>

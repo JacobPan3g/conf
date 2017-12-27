@@ -1,3 +1,0 @@
-targets = smb
-
-include Makefile.in

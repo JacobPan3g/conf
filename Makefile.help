@@ -1,0 +1,8 @@
+help:
+	@echo "install"
+	@echo "  make"
+	@echo "  sudo make sudo=1"
+	@echo "clean"
+	@echo "  make clean"
+	@echo "  sudo make sudo=1 clean"
+    
